@@ -9,3 +9,22 @@
   <body>
   </body>
 </html>
+
+
+sketch.css
+
+function setup() {
+  // Cria uma tela de 600x600 pixels
+  createCanvas(600, 600);
+}
+
+function draw() {
+  // Define o fundo com uma cor cinza claro
+  background(200);
+
+  // Define a cor do preenchimento com base na posição do mouse
+  fill(mouseX % 256, mouseY % 256, (mouseX + mouseY) % 256);
+
+  // Desenha um círculo na posição do mouse
+  ellipse(mouseX, mouseY, 50, 50);
+}
